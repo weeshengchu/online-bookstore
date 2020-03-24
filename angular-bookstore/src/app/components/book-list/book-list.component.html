@@ -1,0 +1,21 @@
+<!-- 14/75 Display the list of books in html table with hard-coded values -->
+<table border="1">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Prices</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">
+            <td>
+                <img [src]="book.imageUrl" height="50" />
+            </td>
+            <td>{{book.name}}</td>
+            <td>{{book.description}}</td>
+            <td>{{book.unitPrice | currency: 'SGD'}}</td>
+        </tr>
+    </tbody>
+</table>
