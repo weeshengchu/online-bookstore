@@ -1,0 +1,14 @@
+<!-- 45/75: Create component for category using Angular CLI -->
+<div class="list-group">
+    <!-- <a routerLink="/category/1" class="list-group-item" routerLinkActive="bg-primary text-white font-weight-bold">Web
+        Development</a>
+    <a routerLink="/category/2" class="list-group-item"
+        routerLinkActive="bg-primary text-white font-weight-bold">Programming</a>
+    <a routerLink="/category/3" class="list-group-item"
+        routerLinkActive="bg-primary text-white font-weight-bold">Databases</a> -->
+
+    <!-- 50/75: Update category view template and wrap up feature 4     -->
+    <a [routerLink]="'/category/'+category.id" *ngFor="let category of bookCategories" class="list-group-item"
+        routerLinkActive="bg-primary text-white font-weight-bold">{{category.categoryName}}</a>
+
+</div>

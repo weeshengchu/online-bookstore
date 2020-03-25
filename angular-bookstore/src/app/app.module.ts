@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 import { BookListComponent } from "./components/book-list/book-list.component";
 import { BookService } from "./services/book.service";
 import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
+import { BookCategoryComponent } from './components/book-category/book-category.component';
 
 // 37/75: Define routes in angular
 const routes: Routes = [
@@ -19,7 +20,7 @@ const routes: Routes = [
 // 16/75 Make a HTTP GET request to the Spring boot application
 
 @NgModule({
-  declarations: [AppComponent, BookListComponent, PageNotFoundComponent],
+  declarations: [AppComponent, BookListComponent, PageNotFoundComponent, BookCategoryComponent],
   imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(routes)],
   providers: [BookService],
   bootstrap: [AppComponent]
