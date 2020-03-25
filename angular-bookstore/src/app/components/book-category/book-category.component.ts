@@ -1,6 +1,11 @@
 import { Component, OnInit } from "@angular/core";
+<<<<<<< HEAD
 import { BookCategory } from "../../common/book-category";
 import { BookService } from "../../services/book.service";
+=======
+import { BookCategory } from "src/app/common/book-category";
+import { BookService } from "src/app/services/book.service";
+>>>>>>> refs/heads/dynamic-categories
 
 @Component({
   selector: "app-book-category",

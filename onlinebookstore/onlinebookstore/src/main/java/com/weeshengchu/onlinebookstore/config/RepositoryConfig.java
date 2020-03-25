@@ -27,5 +27,10 @@ public class RepositoryConfig implements RepositoryRestConfigurer{
 		config.exposeIdsFor(entityManager.getMetamodel().getEntities().stream()
 				.map(Type::getJavaType)
 				.toArray(Class[]::new));
+		
+		// 49/75: Fixing the CORS policy no 'access-control-allow-origin'
+		config.getCorsRegistry()
+		.addMapping("/**")
+		.allowedOrigins("http://localhost:4200");
 }
 }
