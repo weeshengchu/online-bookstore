@@ -1,3 +1,7 @@
+/* 25/75: Add reference for bootstrap & jquery library in angular app -> anuglar.json 'scripts' property*/
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 /* 21/75: Add google fonts to angular application */
 @font-face {
   font-family: "Roboto Mono";
@@ -6,4 +10,30 @@
 
 body {
   font-family: "Roboto Mono";
+}
+
+/* 26/75: Continue with template integration */
+body {
+  padding-top: 56px;
+}
+
+/* 27/75: Fix the footer issue */
+body,
+html {
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  height: 60px;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 100px;
 }
